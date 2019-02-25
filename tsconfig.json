@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "input-v": [
+        "dist/input-v"
+      ],
+      "input-v/*": [
+        "dist/input-v/*"
+      ]
+    }
   }
 }
