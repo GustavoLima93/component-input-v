@@ -12,10 +12,10 @@ import { NgModel, FormControlName } from '@angular/forms'
 })
 export class InputVComponent implements OnInit, AfterContentInit {
 
-  @Input() label: string; // label que  sera recebida para componente
-  @Input() errorMessage: string; // mensagem de erro que sera recebida para componente
+  @Input() label: string; // label que  sera recebida por componente
+  @Input() errorMessage: string; // mensagem de erro que sera recebida por componente
 
-  input: any // input que sera exibido 
+  input: any // input que sera exibido  atraves da diretiva ng-content
 
   @ContentChild(NgModel) model: NgModel // feature angular para pegar diretiva do ngForm
   @ContentChild(FormControlName) control: FormControlName  // feature angular para pegar diretiva do ReactiveForm
